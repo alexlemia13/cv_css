@@ -220,31 +220,40 @@ footer {
 }
 
 footer a {
-    color: inherit;
     -webkit-transition: color .3s;
     -o-transition: color .3s;
     transition: color .3s;
 }
 
-footer a:hover {
+.fa-github {
+    color: inherit;
+}
+
+.fa-github:hover {
     color: rgb(100, 100, 100);
 }
 
 .fa-linkedin-in {
+    position: relative;
+    bottom: -3px;
+    font-size: 2.2em;
     color: #2563AC;
-    -webkit-transition: color .3s;
-    -o-transition: color .3s;
-    transition: color .3s;
+    
 }
 
 .fa-linkedin-in:hover {
-    color: #2c7bd4;
+    color: #307ed8;
 }
 
+.fa-at {
+    color: #9040af;
+}
+
+.fa-at:hover {
+    color: #b753df;
+}
 
 /*********** Media queries *********************/
-
-
 
 
 @media screen and (max-width: 1200px) {
@@ -262,18 +271,23 @@ footer a:hover {
         font-size: 45%;
     }
 
+    hr {
+        margin: 3rem 0 2rem 0;
+    }
+
     .photo {
         padding: 2rem;
     }
 
-    hr {
-        margin: 3rem 0 2rem 0;
-    }
 }
 
 @media screen and (max-width: 576px) {
     html {
         font-size: 40%;
+    }
+    
+    h2 {
+        font-size: 4.5rem;
     }
 
     .skills .list-inline .list-inline-item:not(:last-child) {
@@ -288,11 +302,6 @@ footer a:hover {
         font-size: 3rem;
     }
 
-    h2 {
-        font-size: 4.5rem;
-    }
-
-
 }
 
 @media screen and (max-width: 378px) {
@@ -302,7 +311,6 @@ footer a:hover {
         max-width: 100%;
         margin-top: 1rem;
     }
-
 
     .profil-text {
         -ms-flex-preferred-size: content;
