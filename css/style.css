@@ -1,0 +1,324 @@
+/*********** Global *********************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 2vh 1rem;
+    color: #444;
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+hr {
+    margin: 4rem 0 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container-bis {
+    padding: 4rem 2rem 2rem;
+}
+
+.card {
+    -webkit-box-shadow: 3px 3px 1.2rem rgba(0, 0, 0, .2), -3px -3px 1.2rem rgba(0, 0, 0, .2);
+    box-shadow: 3px 3px 1.2rem rgba(0, 0, 0, .2), -3px -3px 1.2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+}
+
+/*********** Header *********************/
+h1 {
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 6rem;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+/*********** Section Profil *********************/
+
+.profil li {
+    font-size: 1.5rem;
+}
+
+.profil i {
+    width: 2.5rem;
+}
+
+.photo {
+    margin: 0;
+    margin-top: 3rem;
+    width: 20rem;
+    height: 20rem;
+    padding: 3rem;
+    border: 1px solid;
+    border-image-slice: 15 15 15 15;
+    border-image-width: 10px 10px 10px 10px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-source: url("../img/border-image-3.png");
+}
+
+/*********** Section Compétences *********************/
+
+.skills {
+    font-size: 1rem;
+}
+
+.behind {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+
+.fa-html5 {
+    background: -o-linear-gradient(left, #DD4B25 0%, #DD4B25 50%, #E96228 50%, #E96228 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#DD4B25), color-stop(50%, #DD4B25), color-stop(50%, #E96228), to(#E96228));
+    background: linear-gradient(to right, #DD4B25 0%, #DD4B25 50%, #E96228 50%, #E96228 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.fa-css3-alt {
+    background: -o-linear-gradient(left, #1A6FB4 0%, #1A6FB4 50%, #0C78BB 50%, #0C78BB 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#1A6FB4), color-stop(50%, #1A6FB4), color-stop(50%, #0C78BB), to(#0C78BB));
+    background: linear-gradient(to right, #1A6FB4 0%, #1A6FB4 50%, #0C78BB 50%, #0C78BB 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.fa-git-alt {
+    color: #E84E32;
+}
+
+.fa-js {
+    color: #EFD81D;
+}
+
+.fa-bootstrap {
+    color: #7A11F7;
+}
+
+.skills img.skills-logo {
+    height: 10rem;
+}
+
+.skills .list-inline .list-inline-item:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.skills .list-inline-item {
+    vertical-align: bottom;
+}
+
+.skills-logo {
+    position: relative;
+    z-index: 10;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+.skills .list-inline-item:hover .skills-logo {
+    -webkit-transform: translateY(-3.5rem);
+    -ms-transform: translateY(-3.5rem);
+    transform: translateY(-3.5rem);
+}
+
+.skills .list-inline-item:hover .behind {
+    opacity: 1;
+    top: 7rem;
+}
+
+
+.small-icon {
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    left: -1.5rem;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+}
+
+.rails-logo {
+    width: 20rem;
+    height: 10rem;
+}
+
+.dotnet-logo {
+    width: 10rem;
+    height: 10rem;
+}
+
+/*********** Section Loisirs *********************/
+
+.loisirs li > * {
+    width: 2rem;
+    margin-right: 2rem;
+}
+
+.loisirs-img {
+    margin-top: -2rem;
+}
+
+.fa-futbol {
+    font-size: 1.3em;
+}
+
+
+/*********** Footer *********************/
+footer {
+    padding: 0 -15px;
+}
+
+footer a {
+    color: inherit;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+}
+
+footer a:hover {
+    color: rgb(100, 100, 100);
+}
+
+.fa-linkedin-in {
+    color: #2563AC;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+}
+
+.fa-linkedin-in:hover {
+    color: #2c7bd4;
+}
+
+
+/*********** Media queries *********************/
+
+
+
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container-bis {
+        padding: 3rem 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .photo {
+        padding: 2rem;
+    }
+
+    hr {
+        margin: 3rem 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 40%;
+    }
+
+    .skills .list-inline .list-inline-item:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+
+    .heading-primary-main {
+        font-size: 5rem;
+    }
+
+    .heading-primary-sub {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 378px) {
+    .photo-container {
+        -ms-flex-preferred-size: content;
+        flex-basis: content;
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+
+    .profil-text {
+        -ms-flex-preferred-size: content;
+        flex-basis: content;
+        max-width: 100%;
+    }
+
+    .profil-flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .not-center-mini {
+        text-align: left !important;
+        margin-left: 2rem;
+    }
+}
