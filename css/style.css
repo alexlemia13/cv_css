@@ -225,17 +225,17 @@ footer a {
     transition: color .3s;
 }
 
-.fa-github {
+footer .fa-github {
     color: inherit;
 }
 
-.fa-github:hover {
+footer .fa-github:hover {
     color: rgb(100, 100, 100);
 }
 
 .fa-linkedin-in {
     position: relative;
-    bottom: -3px;
+    bottom: -.3rem;
     font-size: 2.2em;
     color: #2563AC;
     
