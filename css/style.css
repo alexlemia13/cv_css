@@ -83,7 +83,7 @@ h1 {
     margin: 0;
     margin-top: 3rem;
     height: 20rem;
-    padding: 1rem;
+    padding: 3rem;
     border: 1px solid;
     border-image-slice: 15 15 15 15;
     border-image-width: 10px 10px 10px 10px;
@@ -94,6 +94,9 @@ h1 {
 
 /*********** Section Compétences *********************/
 
+.skills {
+    font-size: 1rem;
+}
 
 .behind {
     position: absolute;
