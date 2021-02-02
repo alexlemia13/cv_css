@@ -82,9 +82,8 @@ h1 {
 .photo {
     margin: 0;
     margin-top: 3rem;
-    width: 20rem;
     height: 20rem;
-    padding: 3rem;
+    padding: 1rem;
     border: 1px solid;
     border-image-slice: 15 15 15 15;
     border-image-width: 10px 10px 10px 10px;
@@ -95,9 +94,6 @@ h1 {
 
 /*********** Section Compétences *********************/
 
-.skills {
-    font-size: 1rem;
-}
 
 .behind {
     position: absolute;
@@ -112,7 +108,6 @@ h1 {
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-
 
 .fa-html5 {
     background: -o-linear-gradient(left, #DD4B25 0%, #DD4B25 50%, #E96228 50%, #E96228 100%);
@@ -145,7 +140,7 @@ h1 {
 }
 
 .skills img.skills-logo {
-    height: 10rem;
+    height: 10em;
 }
 
 .skills .list-inline .list-inline-item:not(:last-child) {
@@ -189,13 +184,13 @@ h1 {
 }
 
 .rails-logo {
-    width: 20rem;
-    height: 10rem;
+    width: 20em;
+    height: 10em;
 }
 
 .dotnet-logo {
-    width: 10rem;
-    height: 10rem;
+    width: 10em;
+    height: 10em;
 }
 
 /*********** Section Loisirs *********************/
@@ -291,7 +286,7 @@ footer .fa-github:hover {
     }
 
     .skills .list-inline .list-inline-item:not(:last-child) {
-        margin-right: 2.5rem;
+        margin-right: 2rem;
     }
 
     .heading-primary-main {
@@ -301,6 +296,17 @@ footer .fa-github:hover {
     .heading-primary-sub {
         font-size: 3rem;
     }
+
+    .skills {
+        font-size: .7rem;
+    }
+  
+    .skills .list-inline-item:hover .skills-logo {
+        -webkit-transform: translateY(-1.5rem);
+        -ms-transform: translateY(-1.5rem);
+        transform: translateY(-1.5rem);
+    }
+    
 
 }
 
